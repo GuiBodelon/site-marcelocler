@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Marcelo Cler</title>
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Fallback Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/a4b4e624f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--JQuery v3.2.1-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Internal scripts-->
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/mask.js" type="module"></script>
+    <!--Internal styles-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Bootstrap v5.3-->
+    <link href="assets/bootstrap5.3/css/bootstrap.min.css" rel="stylesheet" />
+    <!--AOS: Animate Lib-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!--Flickity - Carousel-->
+    <link rel="stylesheet" href="assets/flickity/flickity.css" />
+    <script src="assets/flickity/flickity.pkgd.js"></script>
+    <!--Input Masks-->
+    <script src="https://unpkg.com/imask"></script>
+  </head>
+
+  <body>
+    <header>
+      <button
+        class="btnBackToTop"
+        href="#"
+        id="btnBackToTop"
+        onclick="scrollToTop()"
+        data-aos="zoom-in"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <a
+        href="https://api.whatsapp.com/send?phone=5511991324065&text=Olá!%20Gostaria%20de%20mais%20informações%20da%20mentoria"
+        target="_blank"
+        class="btnWhatsApp"
+        data-aos="zoom-in"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <nav class="navbar fixed-top" data-aos="fade-down">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand">
+            <img
+              src="assets/images/logo.png"
+              class="d-inline-block"
+              width="200"
+            />
+          </a>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <div
+                class="redesSociais d-flex flex-column justify-content-center align-items-start mt-5 d-md-none"
+              >
+                <div class="fs--20 text--white text--poppinsbold mb-4">
+                  Siga-nos nas redes sociais:
+                </div>
+                <div class="d-flex">
+                  <div class="linkedin">
+                    <a
+                      href="https://www.linkedin.com/in/marcelo-cler-a2125616/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="facebook">
+                    <a href="" target="_blank">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div class="instagram">
+                    <a
+                      href="https://www.instagram.com/clermarcelo/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="menu__items">
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#desbloqueie-a-mente-milionaria"
+                    id="menuLink1"
+                  >
+                    <span>Desbloqueie a mente milionária </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#como-funciona-a-mentoria"
+                    id="menuLink2"
+                  >
+                    <span>Como funciona a mentoria </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#pra-quem-e-a-mentoria"
+                    id="menuLink3"
+                  >
+                    <span>Pra quem é a mentoria </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#beneficios-da-mentoria"
+                    id="menuLink4"
+                  >
+                    <span>Benefícios da mentoria </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#beneficio-bonus"
+                    id="menuLink5"
+                  >
+                    <span>Benefício bônus </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#quem-vai-te-ensinar"
+                    id="menuLink6"
+                  >
+                    <span>Quem vai te ensinar </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__item scroll-link"
+                    onclick="closeMenu()"
+                    href="#ao-final-da-mentoria"
+                    id="menuLink8"
+                  >
+                    <span>Ao final da mentoria</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="redesSociais">
+            <ul class="social-networks spin-icon d-none d-md-block">
+              <li data-aos="zoom-in" data-aos-delay="150">
+                <a
+                  href="https://www.linkedin.com/in/marcelo-cler-a2125616/"
+                  target="_blank"
+                  class="icon-linkedin"
+                >
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="300">
+                <a href="" target="_blank" class="icon-facebook"> </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="450">
+                <a
+                  href="https://www.instagram.com/clermarcelo/"
+                  target="_blank"
+                  class="icon-instagram"
+                >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="particles-js"></div>
+      <div class="container-fluid">
+        <div class="row headerContent">
+          <div
+            class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-between firstColumn"
+          >
+            <div
+              class="fs--26 text--blue text--poppinsbold text-uppercase mb-2"
+              data-aos="fade-down-right"
+            >
+              Mentoria de prosperidade
+            </div>
+            <div
+              class="fs--75 text--poppinsbold text-uppercase textGradient my-4 my-md-5 headerTitle"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              Do zero ao sucesso financeiro e pessoal.
+            </div>
+            <div
+              class="fs--20 text--white text--montserrat mb-3 mb-md-5"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Agarre esta oportunidade e permita-me guiar você rumo à
+              prosperidade absoluta, revelando os segredos para desbloquear sua
+              mente e alcançar uma vida plena.
+            </div>
+            <div data-aos="fade-up-right" data-aos-delay="450">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511991324065&text=Olá!%20Gostaria%20de%20mais%20informações%20da%20mentoria"
+                target="_blank"
+              >
+                <button class="btnHeader btnCTA text-uppercase">
+                  Quero mudar de uma vez por todas
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center align-items-center bg--marcelo"
+            data-aos="fade-down"
+            data-aos-delay="450"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="sectionProposta bg--dark"
+      id="desbloqueie-a-mente-milionaria"
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-3 p-md-5 text-center">
+            <div class="text--neonblue title" data-aos="fade-down">
+              Desbloqueie <br />a mentalidade milionária
+            </div>
+            <div
+              class="subtitle text-uppercase text--white"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              Com um método completo, testado e validado!
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center justify-content-md-end align-items-start p-0 pe-4 mt-5 mt-md-0 mb-3 mb-md-0"
+          >
+            <img
+              src="assets/images/marcelo-2.png"
+              alt=""
+              class="img-fluid me-4"
+              style="margin-top: -50px"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            />
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text--white"
+          >
+            <div
+              class="subtitle mb-4"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              A Mentoria de Prosperidade mais COMPLETA do mercado com
+              acompanhamento em TEMPO REAL
+            </div>
+            <p class="mb-4" data-aos="fade-left" data-aos-delay="300">
+              Alcance a prosperidade! Nossa mentoria exclusiva impulsionará seu
+              sucesso financeiro e pessoal. Defina metas claras, domine suas
+              finanças, supere crenças limitantes e desenvolva habilidades
+              poderosas. Receba suporte contínuo para manter sua motivação alta.
+              Transforme sua vida agora mesmo com a Mentoria da Prosperidade.
+              Seu futuro de sucesso começa aqui.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511991324065&text=Olá!%20Gostaria%20de%20mais%20informações%20da%20mentoria"
+              target="_blank"
+            >
+              <button
+                class="fs--20 text-uppercase btnCTA"
+                data-aos="fade-up-left"
+                data-aos-delay="450"
+              >
+                Quero entrar na mentoria
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionMentoria bg--black" id="como-funciona-a-mentoria">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-3 p-md-5 text-center">
+            <div class="title text--white" data-aos="fade-down">
+              Como funciona a mentoria?
+            </div>
+          </div>
+        </div>
+        <div class="row d-none d-md-block">
+          <div
+            class="col-12 d-flex justify-content-center"
+            data-aos="zoom-in-up"
+          >
+            <div
+              class="carouselMentoria"
+              data-flickity='{ "cellAlign": "center" }'
+            >
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-search"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Identificação e eliminação de crenças limitantes
+                  </div>
+                  <div class="cardBody">
+                    Juntos, irei te guiar na identificação das crenças
+                    limitantes que estão impedindo seu progresso financeiro.
+                    Vamos trabalhar em equipe para superá-las e abrir espaço
+                    para novas perspectivas e abordagens que irão
+                    impulsionar seus objetivos.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Construção de novas crenças
+                  </div>
+                  <div class="cardBody">
+                    Nesta próxima etapa, vamos construir crenças positivas sobre
+                    dinheiro e finanças. Identificaremos e adotaremos crenças
+                    que apoiam o sucesso financeiro, fortalecendo sua
+                    mentalidade. Isso permitirá que você se sinta mais confiante
+                    e capacitado para alcançar seus objetivos financeiros.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-rocket"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Desenvolvimento da mentalidade vencedora
+                  </div>
+                  <div class="cardBody">
+                    Nesta etapa, vamos trabalhar juntos para desenvolver uma
+                    mentalidade vencedora em relação ao dinheiro. Isso envolve
+                    cultivar uma atitude positiva, perseverante e determinada
+                    para atingir seus objetivos financeiros. Vou compartilhar
+                    estratégias para superar obstáculos, desenvolver resiliência
+                    e adotar uma abordagem proativa em relação às suas finanças.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-file-signature ps-3"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">Planejamento</div>
+                  <div class="cardBody">
+                    Nesta fase, vamos desenvolver juntos um plano financeiro
+                    abrangente. Definiremos metas financeiras, criaremos um
+                    orçamento, analisaremos opções de investimento e
+                    estabeleceremos estratégias para gerenciar
+                    dívidas e despesas.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Análise financeira
+                  </div>
+                  <div class="cardBody">
+                    Nesta etapa, faremos uma análise minuciosa da sua situação
+                    financeira atual. Vamos revisar suas receitas, despesas,
+                    investimentos, ativos e passivos. Isso nos ajudará a
+                    identificar áreas para melhorias, riscos financeiros e
+                    oportunidades para maximizar seus recursos.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-heart-pulse"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Situação da saúde financeira
+                  </div>
+                  <div class="cardBody">
+                    Na etapa de análise financeira, avalio sua situação atual em
+                    relação ao plano estabelecido. Comparo os resultados com as
+                    metas definidas, identificando discrepâncias e fazendo
+                    ajustes, se necessário. O objetivo é garantir que você
+                    esteja no caminho certo para alcançar suas
+                    metas financeiras.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">Sentimento</div>
+                  <div class="cardBody">
+                    Na etapa emocional, focaremos em compreender e gerenciar
+                    suas emoções sobre dinheiro. Vamos desenvolver uma relação
+                    saudável com o dinheiro, superar medos e ansiedades
+                    financeiras, buscando uma abordagem equilibrada.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-hourglass-half"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Otimização do processo
+                  </div>
+                  <div class="cardBody">
+                    Na etapa de otimização financeira, vamos trabalhar juntos
+                    para melhorar sua situação financeira. Isso inclui
+                    identificar oportunidades de economia, reduzir despesas
+                    desnecessárias, maximizar investimentos e implementar
+                    estratégias para aumentar a eficiência financeira. Nosso
+                    objetivo é usar seus recursos financeiros de forma mais
+                    eficiente e maximizar seu potencial de
+                    crescimento e prosperidade.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div
+                  class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+                >
+                  <div
+                    class="cardIcon d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                  </div>
+                  <div class="cardTitle text-uppercase my-4">
+                    Sucesso financeiro
+                  </div>
+                  <div class="cardBody">
+                    Na etapa final da construção financeira, você alcançará o
+                    sucesso financeiro. Isso significa atingir suas metas
+                    financeiras, desfrutar de uma saúde financeira sólida e ter
+                    confiança e tranquilidade em relação ao seu futuro
+                    financeiro. O sucesso financeiro é pessoal e pode incluir
+                    alcançar a independência financeira, criar uma reserva de
+                    emergência, pagar dívidas, aumentar seu patrimônio líquido
+                    ou alcançar estabilidade financeira geral.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-block d-md-none">
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-search"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Identificação e eliminação de crenças limitantes
+              </div>
+              <div class="cardBody">
+                Juntos, irei te guiar na identificação das crenças limitantes
+                que estão impedindo seu progresso financeiro. Vamos trabalhar em
+                equipe para superá-las e abrir espaço para novas perspectivas e
+                abordagens que irão impulsionar seus objetivos.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Construção de novas crenças
+              </div>
+              <div class="cardBody">
+                Nesta próxima etapa, vamos construir crenças positivas sobre
+                dinheiro e finanças. Identificaremos e adotaremos crenças que
+                apoiam o sucesso financeiro, fortalecendo sua mentalidade. Isso
+                permitirá que você se sinta mais confiante e capacitado para
+                alcançar seus objetivos financeiros.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Desenvolvimento da mentalidade vencedora
+              </div>
+              <div class="cardBody">
+                Nesta etapa, vamos trabalhar juntos para desenvolver uma
+                mentalidade vencedora em relação ao dinheiro. Isso envolve
+                cultivar uma atitude positiva, perseverante e determinada para
+                atingir seus objetivos financeiros. Vou compartilhar estratégias
+                para superar obstáculos, desenvolver resiliência e adotar uma
+                abordagem proativa em relação às suas finanças.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-file-signature ps-3"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">Planejamento</div>
+              <div class="cardBody">
+                Nesta fase, vamos desenvolver juntos um plano financeiro
+                abrangente. Definiremos metas financeiras, criaremos um
+                orçamento, analisaremos opções de investimento e estabeleceremos
+                estratégias para gerenciar dívidas e despesas.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Análise financeira
+              </div>
+              <div class="cardBody">
+                Nesta etapa, faremos uma análise minuciosa da sua situação
+                financeira atual. Vamos revisar suas receitas, despesas,
+                investimentos, ativos e passivos. Isso nos ajudará a identificar
+                áreas para melhorias, riscos financeiros e oportunidades para
+                maximizar seus recursos.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Situação da saúde financeira
+              </div>
+              <div class="cardBody">
+                Na etapa de análise financeira, avalio sua situação atual em
+                relação ao plano estabelecido. Comparo os resultados com as
+                metas definidas, identificando discrepâncias e fazendo ajustes,
+                se necessário. O objetivo é garantir que você esteja no caminho
+                certo para alcançar suas metas financeiras.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">Sentimento</div>
+              <div class="cardBody">
+                Na etapa emocional, focaremos em compreender e gerenciar suas
+                emoções sobre dinheiro. Vamos desenvolver uma relação saudável
+                com o dinheiro, superar medos e ansiedades financeiras, buscando
+                uma abordagem equilibrada.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle2 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Otimização do processo
+              </div>
+              <div class="cardBody">
+                Na etapa de otimização financeira, vamos trabalhar juntos para
+                melhorar sua situação financeira. Isso inclui identificar
+                oportunidades de economia, reduzir despesas desnecessárias,
+                maximizar investimentos e implementar estratégias para aumentar
+                a eficiência financeira. Nosso objetivo é usar seus recursos
+                financeiros de forma mais eficiente e maximizar seu potencial de
+                crescimento e prosperidade.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="cardMentoriaStyle1 d-flex flex-column justify-content-start align-items-center pt-2 px-3 pb-5 text-center me-5"
+            >
+              <div
+                class="cardIcon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+              </div>
+              <div class="cardTitle text-uppercase my-4">
+                Sucesso financeiro
+              </div>
+              <div class="cardBody">
+                Na etapa final da construção financeira, você alcançará o
+                sucesso financeiro. Isso significa atingir suas metas
+                financeiras, desfrutar de uma saúde financeira sólida e ter
+                confiança e tranquilidade em relação ao seu futuro financeiro. O
+                sucesso financeiro é pessoal e pode incluir alcançar a
+                independência financeira, criar uma reserva de emergência, pagar
+                dívidas, aumentar seu patrimônio líquido ou alcançar
+                estabilidade financeira geral.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionPraQuem bg--dark" id="pra-quem-e-a-mentoria">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center p-5">
+            <div class="text--neonblue title" data-aos="fade-down">
+              Pra quem é a mentoria?
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-12 cardPraQuem d-flex justify-content-start align-items-center"
+            data-aos="flip-up"
+          >
+            <div
+              class="cardIcon d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <p class="cardText">
+              Para você que possui objetivos financeiros ambiciosos, mas
+              enfrenta dificuldades na administração de suas finanças e na
+              criação de um plano efetivo para alcançá-los.
+            </p>
+          </div>
+          <div
+            class="col-12 cardPraQuem d-flex justify-content-start align-items-center"
+            data-aos="flip-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="cardIcon d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <p class="cardText">
+              Para você que deseja ter uma visão clara e estratégica de seus
+              objetivos financeiros, mas se sente perdido(a) no meio de tantas
+              opções e informações contraditórias.
+            </p>
+          </div>
+          <div
+            class="col-12 cardPraQuem d-flex justify-content-start align-items-center"
+            data-aos="flip-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="cardIcon d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-person-rays"></i>
+            </div>
+            <p class="cardText">
+              Para você que está determinado(a) a superar suas crenças
+              limitantes em relação ao dinheiro e ao sucesso financeiro, e está
+              pronto(a) para adotar uma mentalidade de abundância e
+              prosperidade.
+            </p>
+          </div>
+          <div
+            class="col-12 cardPraQuem d-flex justify-content-start align-items-center"
+            data-aos="flip-up"
+            data-aos-delay="450"
+          >
+            <div
+              class="cardIcon d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <p class="cardText">
+              Para você que busca aprimorar suas habilidades de comunicação,
+              tomada de decisão e negociação, para aproveitar melhor as
+              oportunidades financeiras e obter resultados mais favoráveis em
+              transações e negócios.
+            </p>
+          </div>
+          <div
+            class="col-12 cardPraQuem d-flex justify-content-start align-items-center"
+            data-aos="flip-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="cardIcon d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <p class="cardText">
+              Para você que deseja desenvolver uma mentalidade de sucesso
+              financeiro, desbloquear seu potencial máximo e alcançar uma vida
+              de liberdade e realização por meio da transformação de suas
+              crenças limitantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionBeneficios bg--black" id="beneficios-da-mentoria">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-3 p-md-5 text-center">
+            <div
+              class="title text-uppercase text--neonblue"
+              data-aos="fade-down"
+            >
+              Benefícios da mentoria:
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div
+              class="cardTopic d-flex flex-column justify-content-center align-items-start"
+              data-aos="flip-left"
+            >
+              <span class="icon text-center">
+                <i class="fa-solid fa-people-pulling"></i>
+              </span>
+              <div class="cardTopicTitle text-uppercase">
+                Orientação personalizada:
+              </div>
+              <p>
+                A mentoria de prosperidade oferece orientação personalizada de
+                um mentor experiente e bem-sucedido. Isso permite que você
+                receba conselhos insights específicos para sua situação,
+                ajudando você a identificar e superar obstáculos, e desenvolver
+                um plano de ação eficaz para alcançar seus objetivos de
+                prosperidade.
+              </p>
+              <div class="shine"></div>
+              <div class="background">
+                <div class="tiles">
+                  <div class="tile tile-1"></div>
+                  <div class="tile tile-2"></div>
+                  <div class="tile tile-3"></div>
+                  <div class="tile tile-4"></div>
+
+                  <div class="tile tile-5"></div>
+                  <div class="tile tile-6"></div>
+                  <div class="tile tile-7"></div>
+                  <div class="tile tile-8"></div>
+
+                  <div class="tile tile-9"></div>
+                  <div class="tile tile-10"></div>
+                </div>
+
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div
+              class="cardTopic d-flex flex-column justify-content-center align-items-start"
+              data-aos="flip-left"
+              data-aos-delay="150"
+            >
+              <span class="icon text-center">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </span>
+              <div class="cardTopicTitle text-uppercase">
+                Expansão de conhecimentos e habilidades:
+              </div>
+              <p>
+                O mentor de prosperidade pode compartilhar seu conhecimento e
+                experiência em áreas relevantes, como finanças, investimentos,
+                empreendedorismo ou desenvolvimento pessoal. Isso permite que
+                você adquire novas habilidades, aprenda estratégias comprovadas
+                e aprimore seu conhecimento, ajudando a tomar decisões mais
+                informadas e eficazes relacionadas a sua prosperidade
+                financeira.
+              </p>
+              <div class="shine"></div>
+              <div class="background">
+                <div class="tiles">
+                  <div class="tile tile-1"></div>
+                  <div class="tile tile-2"></div>
+                  <div class="tile tile-3"></div>
+                  <div class="tile tile-4"></div>
+
+                  <div class="tile tile-5"></div>
+                  <div class="tile tile-6"></div>
+                  <div class="tile tile-7"></div>
+                  <div class="tile tile-8"></div>
+
+                  <div class="tile tile-9"></div>
+                  <div class="tile tile-10"></div>
+                </div>
+
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div
+              class="cardTopic d-flex flex-column justify-content-center align-items-start"
+              data-aos="flip-left"
+              data-aos-delay="300"
+            >
+              <span class="icon text-center">
+                <i class="fa-solid fa-arrow-up-right-dots"></i>
+              </span>
+              <div class="cardTopicTitle text-uppercase">
+                Aumento da confiança e motivação:
+              </div>
+              <p>
+                Ter um mentor que acredita em você, incentiva seu crescimento e
+                oferece suporte contínuo para aumentar sua confiança e
+                motivação. Um mentor pode ajudá-lo a identificar suas forças,
+                superar suas dúvidas e medos, crenças limitantes e fornecer
+                encorajamento e feedback construtivo ao longo do caminho. Isso
+                pode ser especialmente útil quando você enfrenta desafios ou
+                momentos de auto sabotagem.
+              </p>
+              <div class="shine"></div>
+              <div class="background">
+                <div class="tiles">
+                  <div class="tile tile-1"></div>
+                  <div class="tile tile-2"></div>
+                  <div class="tile tile-3"></div>
+                  <div class="tile tile-4"></div>
+
+                  <div class="tile tile-5"></div>
+                  <div class="tile tile-6"></div>
+                  <div class="tile tile-7"></div>
+                  <div class="tile tile-8"></div>
+
+                  <div class="tile tile-9"></div>
+                  <div class="tile tile-10"></div>
+                </div>
+
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div
+              class="cardTopic d-flex flex-column justify-content-center align-items-start"
+              data-aos="flip-left"
+              data-aos-delay="450"
+            >
+              <span class="icon text-center">
+                <i class="fa-solid fa-people-group"></i>
+              </span>
+              <div class="cardTopicTitle text-uppercase">
+                Networking e oportunidades:
+              </div>
+              <p>
+                Um mentor bem conectado pode apresentá-lo a uma rede de contatos
+                valiosos e oportunidades de negócios. Essas conexões podem abrir
+                portas, fornecerem sites de especialistas em seu campo de
+                interesse e aumentar suas chances de sucesso. Além disso, o
+                mentor pode ajudá-lo a desenvolver habilidades de networking e
+                relacionamento, o que é essencial para alcançar a prosperidade
+                em muitas áreas.
+              </p>
+              <div class="shine"></div>
+              <div class="background">
+                <div class="tiles">
+                  <div class="tile tile-1"></div>
+                  <div class="tile tile-2"></div>
+                  <div class="tile tile-3"></div>
+                  <div class="tile tile-4"></div>
+
+                  <div class="tile tile-5"></div>
+                  <div class="tile tile-6"></div>
+                  <div class="tile tile-7"></div>
+                  <div class="tile tile-8"></div>
+
+                  <div class="tile tile-9"></div>
+                  <div class="tile tile-10"></div>
+                </div>
+
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex">
+            <div
+              class="cardTopic d-flex flex-column justify-content-center align-items-start"
+              data-aos="flip-up"
+              data-aos-delay="600"
+            >
+              <span class="icon text-center">
+                <i class="fa-solid fa-person-walking-luggage"></i>
+              </span>
+              <div class="cardTopicTitle text-uppercase">
+                Responsabilidade e prestação de contas:
+              </div>
+              <p>
+                Um dos benefícios fundamentais de uma mentoria de prosperidade é
+                a prestação de contas. O mentor irá acompanhá-lo em seu
+                progresso, definir metas desafiadoras e garantir que você esteja
+                cumprindo suas responsabilidades e compromissos. Essa
+                responsabilidade ajuda a manter o foco, impulsiona a ação
+                consistente e aumenta suas chances de alcançar os resultados
+                desejados.
+              </p>
+              <div class="shine"></div>
+              <div class="background">
+                <div class="tiles">
+                  <div class="tile tile-1"></div>
+                  <div class="tile tile-2"></div>
+                  <div class="tile tile-3"></div>
+                  <div class="tile tile-4"></div>
+
+                  <div class="tile tile-5"></div>
+                  <div class="tile tile-6"></div>
+                  <div class="tile tile-7"></div>
+                  <div class="tile tile-8"></div>
+
+                  <div class="tile tile-9"></div>
+                  <div class="tile tile-10"></div>
+                </div>
+
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionBeneficioBonus bg--dark" id="beneficio-bonus">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center p-5">
+            <div class="text--white title" data-aos="fade-down">
+              Benefício bônus
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 bonusCard" data-aos="flip-left">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="assets/images/pecas-xadrez.png"
+              alt=""
+              class="img-fluid pt-4 pt-md-5"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            />
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-3 pt-md-5 p-5"
+          >
+            <div
+              class="fs--50 text--poppinsbold mb-3 mb-md-5 bonusCardTitle textGradient"
+              data-aos="fade-left"
+              data-aos-delay="250"
+            >
+              Sessões Individuais <br />
+              Plano de Ação Exclusivo
+            </div>
+            <p
+              class="text--white fs--20"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              Através das informações do seu atual momento, vou criar um plano
+              de ação estratégico que impulsionará uma mudança completa em sua
+              vida, levando você a alcançar seus objetivos profissionais,
+              pessoais e financeiros. Com base em uma análise cuidadosa, iremos
+              desenvolver estratégias personalizadas para superar desafios e
+              aproveitar oportunidades. Prepare-se para uma transformação
+              abrangente e avance em direção ao sucesso em todas as
+              áreas da sua vida!
+            </p>
+          </div>
+        </div>
+        <!--
+        <div class="row mb-5 bonusCard">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5">
+            <div
+              class="fs--50 text--poppinsbold mb-3 mb-md-5 bonusCardTitle textGradient"
+            >
+              Acesso ao meu WhatsApp pessoal
+            </div>
+            <p class="text--white fs--20 mb-2 mb-md-4">
+              Você terá acesso direto ao meu WhatsApp pessoal SEMPRE que
+              precisas, 7 dias por semana, 24 horas por dia.
+            </p>
+            <p class="text--white fs--20">
+              É o meu comprometimento com o seu tempo e com o seu trabalho.
+            </p>
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="assets/images/audio.png"
+              alt=""
+              class="img-fluid pb-4 pb-md-0"
+            />
+          </div>
+        </div>-->
+        <div class="row mb-5 bonusCard" data-aos="flip-right">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5 pb-3 pb-5"
+          >
+            <div
+              class="fs--50 text--poppinsbold mb-3 mb-md-5 bonusCardTitle textGradient"
+              data-aos="fade-right"
+              data-aos-delay="250"
+            >
+              Acesso aos Materiais de Apoio
+            </div>
+            <p
+              class="text--white fs--20"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              Você terá acesso a todos os materiais de apoio utilizados para
+              realizar a sua mudança, como uma planilha de excel criada
+              exclusivamente através da minha metodologia de
+              organização financeira.
+            </p>
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center p-5"
+          >
+            <img
+              src="assets/images/mockup-notebook.png"
+              alt=""
+              class="img-fluid pb-4 pb-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            />
+          </div>
+        </div>
+        <div class="row mb-5 bonusCard" data-aos="flip-left">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="assets/images/mockup-iphone.png"
+              alt=""
+              class="img-fluid pt-4 pt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            />
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-3 pt-md-5 p-5"
+          >
+            <div
+              class="fs--50 text--poppinsbold mb-3 mb-md-5 bonusCardTitle textGradient"
+              data-aos="fade-left"
+              data-aos-delay="250"
+            >
+              Grupo de Networking com Conteúdos Exclusivos
+            </div>
+            <p
+              class="text--white fs--20"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              Na minha mentoria, você terá acesso exclusivo a conteúdos de
+              networking que impulsionarão seu crescimento
+              pessoal e profissional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionEnsinar bg--black" id="quem-vai-te-ensinar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center p-3 p-md-5">
+            <div class="text--neonblue title" data-aos="fade-down">
+              Quem vai te ensinar?
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text--white fs--18 text--montserrat pt-5 d-flex flex-column"
+          >
+            <p class="mb-4" data-aos="fade-right">
+              Me considero um amante da Arte, em especial da Música e da Dança.
+              Estudei saxofone por 20 anos, desde criança até a fase adulta,
+              tocando numa banda, e também de forma autodidata me divirto
+              tocando instrumentos de percussão. Na dança pratiquei ritmos
+              latinos de forma intensa por 10 anos, chegando a participar e até
+              a ganhar concursos de dança.
+            </p>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="150">
+              Sou praticante da filosofia budista há 40 anos, estudando de forma
+              constante e aprofundada a espiritualidade. Sou apaixonado pelo
+              comportamento humano aliado às melhores práticas de um
+              planejamento financeiro voltado para a verdadeira prosperidade. Há
+              mais de 20 anos dedico a minha vida ao atendimento de pessoas e
+              empresas com uma metodologia baseada nos melhores conteúdos e
+              práticas americanas e orientais adaptada à realidade brasileira.
+            </p>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="300">
+              Defendo um modo de vida equilibrado pelos Pilares: emocional,
+              espiritual, profissional, físico, familiar e financeiro. Atuo como
+              consultor e mentor de prosperidade, ministrando cursos e palestras
+              motivacionais com foco em finanças.
+            </p>
+            <div
+              id="carouselBiography"
+              class="carousel slide carouselBiography carousel-fade"
+              data-bs-ride="carousel"
+              data-aos="zoom-in-up"
+              data-aos-delay="450"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/foto-palestra-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/foto-palestra-2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/foto-palestra-3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselBiography"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselBiography"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="assets/images/marcelo-3.png"
+              class="img-fluid"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 p-0"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionFinalMentoria bg--black" id="ao-final-da-mentoria">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center p-5">
+            <div class="text--white title" data-aos="fade-down">
+              Ao final da mentoria
+              <span class="textGradient">você será capaz</span> de:
+            </div>
+          </div>
+        </div>
+        <div class="row text--white mt-2 mt-md-5">
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center mb-4">
+                <div
+                  class="checklistIcon d-flex justify-content-center align-items-center me-4"
+                  data-aos="zoom-in"
+                  data-aos-delay="250"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p
+                  class="text--montserrat fs--20"
+                  data-aos="fade-right"
+                  data-aos-delay="150"
+                >
+                  Terá uma visão clara de suas metas e objetivos em várias áreas
+                  da vida, permitindo que direcione seus esforções de maneira
+                  mais eficaz.
+                </p>
+              </div>
+              <div class="col-12 d-flex align-items-center mb-4">
+                <div
+                  class="checklistIcon d-flex justify-content-center align-items-center me-4"
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p
+                  class="text--montserrat fs--20"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                >
+                  Desenvolverá habilidades financeiras sólidas e estará apta a
+                  administrar suas finanças com eficiência, criar e seguir um
+                  orçamento, economizar e investir de forma inteligente e buscar
+                  a independência financeira plena.
+                </p>
+              </div>
+              <div class="col-12 d-flex align-items-center mb-4">
+                <div
+                  class="checklistIcon d-flex justify-content-center align-items-center me-4"
+                  data-aos="zoom-in"
+                  data-aos-delay="550"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p
+                  class="text--montserrat fs--20"
+                  data-aos="fade-right"
+                  data-aos-delay="450"
+                >
+                  Aprenderá a identificar e superar suas crenças limitantes,
+                  substituindo-as por uma mentalidade positiva e capacitadora.
+                  Você se tornará mais confiante, resiliente e motivado para
+                  enfrentar os desafios e buscar oportunidades de crescimento.
+                </p>
+              </div>
+              <div class="col-12 d-flex align-items-center mb-4">
+                <div
+                  class="checklistIcon d-flex justify-content-center align-items-center me-4"
+                  data-aos="zoom-in"
+                  data-aos-delay="700"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p
+                  class="text--montserrat fs--20"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                >
+                  Você adquirirá competências essenciais, como comunicação
+                  eficaz, negociação, tomada de decisão e gestão do tempo. Essas
+                  habilidades impulsionarão seu sucesso tanto na vida pessoal
+                  quanto na profissional.
+                </p>
+              </div>
+              <div class="col-12 d-flex align-items-center">
+                <div
+                  class="checklistIcon d-flex justify-content-center align-items-center me-4"
+                  data-aos="zoom-in"
+                  data-aos-delay="850"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p
+                  class="text--montserrat fs--20"
+                  data-aos="fade-right"
+                  data-aos-delay="750"
+                >
+                  Com a combinação de metas claras, habilidades aprimoradas e
+                  apoio contínuo, vocês estará em uma posição privilegiada para
+                  alcançar os resultados tangíveis em sua vida. Isso pode
+                  incluir avanços em sua carreira, administração de sua empresa
+                  e negócios, aumento de renda, melhoria nos relacionamentos,
+                  maior equilíbrio entre trabalho e vida pessoal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 d-flex justify-content-between flex-column align-items-center mt-5 mt-md-0"
+          >
+            <img
+              src="assets/images/cerebro.png"
+              alt=""
+              class="img-fluid cerebro"
+              data-aos="zoom-in"
+            />
+            <div class="mt-4 mt-md-0" data-aos="fade-left" data-aos-delay="150">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511991324065&text=Olá!%20Gostaria%20de%20mais%20informações%20da%20mentoria"
+                target="_blank"
+              >
+                <button class="fs--20 text-uppercase btnCTA">
+                  Quero entrar na mentoria
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg--dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-start align-items-start mb-5"
+          >
+            <img
+              src="assets/images/logo.png"
+              alt=""
+              class="img-fluid"
+              width="400"
+              data-aos="zoom-in"
+            />
+          </div>
+          <div class="col-12 col-md-9">
+            <div
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+              style="display: none"
+            >
+              Obrigado por entrar em contato! Sua mensagem foi enviada.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+              style="display: none"
+            >
+              Desculpe, ocorreu um erro ao enviar sua mensagem. Por favor, tente
+              novamente mais tarde.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div class="col-12 d-flex flex-column justify-content-start">
+            <div class="text--neonblue subtitle mb-2" data-aos="fade-right">
+              Até quando você irá procrastinar a sua mudança?
+            </div>
+            <p class="text--white" data-aos="fade-right" data-aos-delay="150">
+              Entre em contato conosco!
+            </p>
+            <form
+              id="contactForm"
+              method="post"
+              class="mt-5 contactForm"
+              data-aos="fade-up"
+            >
+              <div class="row mb-3">
+                <div
+                  class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4 mb-md-0"
+                >
+                  <div class="form__group field">
+                    <input
+                      type="input"
+                      class="form__field"
+                      placeholder="Name"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                    <label for="name" class="form__label">Nome</label>
+                  </div>
+                </div>
+                <div
+                  class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4 mb-md-0"
+                >
+                  <div class="form__group field">
+                    <input
+                      type="input"
+                      class="form__field"
+                      placeholder="Email"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                    <label for="email" class="form__label">Email</label>
+                  </div>
+                </div>
+                <div
+                  class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4 mb-md-0"
+                >
+                  <div class="form__group field">
+                    <input
+                      type="input"
+                      class="form__field"
+                      placeholder="Telefone"
+                      name="phone"
+                      id="phone"
+                      required
+                    />
+                    <label for="phone" class="form__label">Telefone</label>
+                  </div>
+                </div>
+                <div
+                  class="col-xxl-9 col-xl-12 col-lg-12 col-md-9 col-sm-12 mt-4"
+                >
+                  <div class="form__group field">
+                    <textarea
+                      type="input"
+                      class="form__field"
+                      placeholder="Mensagem"
+                      name="message"
+                      id="message"
+                      required
+                    ></textarea>
+                    <label for="message" class="form__label">Mensagem</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-9 d-flex justify-content-end">
+                  <button class="btnEnviar">Enviar</button>
+                </div>
+                <div class="col-12">
+                  <ul class="social-networks spin-icon d-block d-md-none">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/marcelo-cler-a2125616/"
+                        target="_blank"
+                        class="icon-linkedin"
+                      >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" class="icon-facebook"> </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/clermarcelo/"
+                        target="_blank"
+                        class="icon-instagram"
+                      >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap v5.3-->
+    <script src="assets/bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+    <!--AOS: Animate Lib-->
+    <script>
+      AOS.init({
+        disable: "mobile",
+        startEvent: "load",
+        once: false,
+        duration: 1200,
+      });
+    </script>
+    <!--Automação do Formulário de Contato-->
+    <script>
+      $(document).ready(function () {
+        $("#contactForm").submit(function (event) {
+          event.preventDefault(); // Impede o envio do formulário padrão
+
+          // Obtém os dados do formulário
+          var formData = $(this).serialize();
+
+          // Envia o formulário via AJAX
+          $.ajax({
+            type: "POST",
+            url: "assets/formAutomation/process_form.php", // URL do arquivo PHP de processamento do formulário
+            data: formData,
+            success: function (response) {
+              // Processa a resposta do servidor
+              if (response === "success") {
+                $(".alert-success").show("500");
+                $(".alert-danger").hide("300");
+                setTimeout(function () {
+                  $(".alert-success").hide("300");
+                }, 5000); // Tempo em milissegundos (5 segundos)
+              } else {
+                $(".alert-danger").show("500");
+                $(".alert-success").hide("300");
+                setTimeout(function () {
+                  $(".alert-danger").hide("300");
+                }, 5000); // Tempo em milissegundos (5 segundos)
+              }
+            },
+            error: function () {
+              $(".alert-danger").show("500");
+              setTimeout(function () {
+                $(".alert-danger").hide("300");
+              }, 5000); // Tempo em milissegundos (5 segundos)
+            },
+          });
+        });
+      });
+    </script>
+
+    <!-- Particles scripts -->
+    <script src="assets/js/app.js"></script>
+    <!-- Typed -> For auto typing animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+</html>

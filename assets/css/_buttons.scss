@@ -1,0 +1,147 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.btnCTA {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  display: block;
+  padding: 10px 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-position: right center;
+  }
+}
+
+header {
+  .btnBackToTop {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+    right: 25px;
+    background-color: $blue;
+    color: $white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    i {
+      font-size: 25px;
+    }
+    &:hover {
+      background-color: rgb(0, 219, 255);
+      background-color: linear-gradient(
+        270deg,
+        rgba(0, 219, 255, 1) 30%,
+        rgba(49, 108, 215, 1) 83%,
+        rgba(49, 108, 215, 1) 100%
+      );
+    }
+  }
+  .btnWhatsApp {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    bottom: 55px;
+    left: 25px;
+    background-color: #25d366;
+    color: $white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    i {
+      font-size: 50px;
+    }
+    &:hover {
+      background-color: #1fb857;
+    }
+  }
+  .navbar {
+    .btnNavbar {
+      padding: 10px 15px;
+      border: 1px solid $black;
+      color: $black;
+    }
+    .btnNavbar:hover {
+      background-color: $black;
+    }
+    .langButtons {
+      span {
+        cursor: pointer;
+      }
+      .pt {
+        border-right: 1px solid white;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .btnWhatsApp {
+      height: 60px;
+      width: 60px;
+      bottom: 25px;
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+  .btnCTA {
+    padding: 10px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}

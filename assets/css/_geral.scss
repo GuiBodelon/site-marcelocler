@@ -1,0 +1,468 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.b {
+  border: 1px solid fuchsia;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.textGradient {
+  background: rgb(0, 219, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 219, 255, 1) 30%,
+    rgba(49, 108, 215, 1) 83%,
+    rgba(49, 108, 215, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  padding-bottom: 100vh !important;
+  .navbar {
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0 5%;
+    img {
+      cursor: pointer;
+    }
+  }
+  .headerContent {
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: absolute;
+    .firstColumn {
+      padding: 5%;
+      .customText {
+        color: $white !important;
+      }
+    }
+  }
+}
+
+.sectionProposta {
+  padding: 5% 10%;
+  height: 100vh;
+}
+
+.sectionMentoria {
+  padding: 5% 10%;
+  .carouselMentoria {
+    width: 80%;
+    .carousel-cell {
+      display: flex;
+      min-height: 100%;
+    }
+    .flickity-button {
+      background: #333;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      &:hover {
+        background: $darkblue;
+      }
+    }
+    .flickity-prev-next-button {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    /* icon color */
+    .flickity-button-icon {
+      fill: $white;
+    }
+    /* position outside */
+    .flickity-prev-next-button.previous {
+      left: -50px;
+    }
+    .flickity-prev-next-button.next {
+      right: -50px;
+    }
+    .flickity-button:disabled {
+      display: none;
+    }
+  }
+}
+
+.sectionPraQuem {
+  padding: 5% 0;
+  .cardPraQuem {
+    width: 90%;
+    height: 15vh;
+    margin-top: 50px;
+    border: 1px solid $white;
+    padding: 30px 25px 30px 60px;
+    .cardIcon {
+      position: relative;
+      background: rgb(0, 219, 255);
+      background: linear-gradient(
+        313deg,
+        rgba(0, 219, 255, 1) 30%,
+        rgba(49, 108, 215, 1) 83%,
+        rgba(49, 108, 215, 1) 100%
+      );
+      margin-left: -100px;
+      width: 80px;
+      height: 80px;
+      i {
+        font-size: 30px;
+        color: $white;
+      }
+    }
+    .cardText {
+      margin-left: 30px !important;
+      color: $white;
+    }
+  }
+}
+
+.sectionBeneficios {
+  padding: 5% 10%;
+  background-size: cover;
+  .cardTopic {
+    margin-top: 50px;
+    padding: 25px 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: $black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+  }
+}
+
+.sectionBeneficioBonus {
+  padding: 5% 10%;
+  .bonusCard {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(
+      to left,
+      rgba(0, 219, 255, 1) 30%,
+      rgba(49, 108, 215, 1) 83%,
+      rgba(49, 108, 215, 1) 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    .bonusCardTitle {
+      line-height: 50px;
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.sectionEnsinar {
+  padding: 5% 10%;
+  .carouselBiography {
+    width: 477px;
+    height: 368px;
+    .carousel-control-prev,
+    .carousel-control-next {
+      margin-top: -100px;
+      color: $white;
+      opacity: 1;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.sectionFinalMentoria {
+  padding: 5% 10%;
+
+  .checklistIcon {
+    min-width: 35px;
+    min-height: 35px;
+    background: rgb(0, 219, 255);
+    background: linear-gradient(
+      270deg,
+      rgba(0, 219, 255, 1) 30%,
+      rgba(49, 108, 215, 1) 83%,
+      rgba(49, 108, 215, 1) 100%
+    );
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    i {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+  .cerebro {
+    margin-top: -50px;
+    width: 70%;
+  }
+}
+
+footer {
+  $primary: #11998e;
+  $secondary: #38ef7d;
+  padding: 5% 10%;
+  .contactForm {
+    .form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    .form__field {
+      font-family: $montserrat;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid $gray;
+      outline: 0;
+      font-size: 18px;
+      color: $white;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:placeholder-shown ~ .form__label {
+        font-size: 18px;
+        cursor: text;
+        top: 20px;
+      }
+    }
+
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $gray;
+    }
+
+    .form__field:focus {
+      ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $blue;
+        font-weight: 700;
+      }
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(to right, $neonblue, $blue);
+      border-image-slice: 1;
+    }
+    /* reset input */
+    .form__field {
+      &:required,
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+    textarea {
+      min-height: 20vh !important;
+    }
+
+    .btnEnviar {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      background-image: linear-gradient(
+        to right,
+        #314755 0%,
+        #26a0da 51%,
+        #00c1fc 100%
+      );
+      margin: 20px 0 0 0;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $white;
+      transition: 0.5s;
+      background-size: 200% auto;
+      border-radius: 10px;
+      display: block;
+      padding: 10px 50px;
+      border-radius: 10px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background-position: right center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  header {
+    .headerContent {
+      height: auto;
+    }
+  }
+
+  .sectionProposta {
+    height: auto;
+  }
+
+  .sectionMentoria {
+    padding: 5% 5% 10% 5%;
+    .carouselMentoria {
+      width: 100%;
+      .carousel-cell {
+        display: flex;
+        min-height: 100%;
+      }
+      .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+      }
+      /* position outside */
+      .flickity-prev-next-button.previous {
+        left: -50px;
+      }
+      .flickity-prev-next-button.next {
+        right: 0px;
+      }
+    }
+  }
+
+  .sectionPraQuem {
+    .cardPraQuem {
+      width: 90%;
+      height: 160px;
+      padding: 30px 25px 30px 40px;
+      .cardIcon {
+        position: absolute;
+        left: 129px;
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .sectionFinalMentoria {
+    padding: 10% 5%;
+    .cerebro {
+      margin-top: 50px;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .navbar {
+      padding: 0 5%;
+    }
+    .headerContent {
+      height: 100vh;
+      padding-top: 100px;
+    }
+  }
+
+  .sectionProposta {
+    padding: 10% 5%;
+    height: auto;
+  }
+
+  .sectionMentoria {
+    padding: 10% 5%;
+
+    .carouselMentoria {
+      display: none;
+    }
+  }
+
+  .sectionPraQuem {
+    padding: 5% 0 20% 0;
+    .cardPraQuem {
+      width: 80%;
+      height: auto;
+      margin-top: 50px;
+      border: 1px solid $white;
+      padding: 20px 15px 20px 20px;
+      .cardIcon {
+        position: absolute;
+        left: 109.5px;
+        width: 60px !important;
+        height: 60px;
+        padding: 0 15px;
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .sectionBeneficios {
+    padding: 10% 5%;
+    min-height: 100vh;
+  }
+
+  .sectionBeneficioBonus {
+    padding: 10% 5%;
+    min-height: 100vh;
+  }
+
+  .sectionEnsinar {
+    padding: 5%;
+    .carouselBiography {
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+    }
+  }
+
+  .sectionFinalMentoria {
+    padding: 5% 5% 10% 5%;
+    .cerebro {
+      margin-top: 0;
+      width: 80%;
+    }
+  }
+
+  .footer {
+    padding: 10% 5%;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,49 @@
+.bg {
+  &--white {
+    background-color: $white;
+  }
+  &--gray {
+    background-color: $gray;
+  }
+  &--dark {
+    background-color: $dark;
+  }
+  &--black {
+    background-color: $black;
+  }
+  &--lightblue {
+    background-color: $lightblue;
+  }
+  &--blue {
+    background-color: $blue;
+  }
+  &--darkblue {
+    background-color: $darkblue;
+  }
+  &--darkerblue {
+    background-color: $darkerblue;
+  }
+  &--neonblue {
+    background-color: $neonblue;
+  }
+  &--header {
+    background: url(../images/bg-1.png) top left no-repeat;
+    background-size: cover;
+  }
+  &--marcelo {
+    background: url(../images/marcelo.png) top right no-repeat;
+    background-size: contain;
+  }
+  &--marcelo2 {
+    background: url(../images/marcelo-2.png) top right no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    &--marcelo {
+      background: none;
+    }
+  }
+}
